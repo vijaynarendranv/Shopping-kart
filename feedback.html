@@ -1,0 +1,28 @@
+<html>
+<style>
+    body {
+        background-image: url(onl2.jpg);
+        background-size: cover;
+    }
+</style>
+<script>
+    function myFunc() {
+        var a,b,s;
+        a=myform.i.value;
+        s=myform.k.value;
+        document.write("<center>Your Response has been recorded<br>Thank You</center");
+    }
+</script>
+<body>
+    <center><i>
+      <form name="myform">
+          Enter you mail Id:</h1>
+          <input type="email" name=i><br><br><br><br><br>
+          Enter your thoughts:
+          <input type="text" name=k><br><br><br><br><br>
+          <input type="button"value="Submit" onClick=myFunc()>
+      </form>
+    </i>
+    </center>
+</body>
+</html>

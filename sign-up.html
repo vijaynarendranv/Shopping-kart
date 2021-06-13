@@ -1,0 +1,93 @@
+<html>
+<style>
+    body {
+        background-image: url(onl4.jpg);
+        background-size: cover;
+    }
+    div{
+        height: fit-content;
+        width:fit-content;          
+        box-sizing: content-box;           
+        background-color:lightcyan;
+        color: rgb(8, 4, 66);
+    }
+    label{
+        color:rgb(12, 2, 105);
+    }
+</style>
+<script>
+function myFunc() 
+{
+    var a,b,c,d,e,f,o,p;
+    a=myform.firstname.value;
+   
+    b=myform.lastname.value;
+    
+    c=myform.DOB.value;
+   
+    d=myform.email.value;
+   
+    e=myform.gender.value;
+    
+    f=myform.city.value;
+ 
+    o=myform.telephone1.value;
+
+    p=myform.telephone2.value;
+
+    
+   
+
+    
+    document.write("<br>FirstName:"+a);
+    document.write("<br>LastName:"+b);
+    document.write("<br>DOB:"+c);
+    document.write("<br>Email:"+d);
+    document.write("<br>Gender:"+e);
+    document.write("<br>City :"+f);
+    document.write("<br>Number:"+o);
+    document.write("<br>Number:"+p);
+}
+</script>
+
+<body>
+    <center>
+        <div>
+            <h2>Account Creation</h2>
+            <form name=myform "get" autocomplete="off">
+                <font color = "darkred">
+                <label>Enter The First Name</label><br><br><br>
+                <input type ="text"name="firstname"><br><br><br>
+                <label>Enter The Last Name</label><br><br><br>
+                <input type ="text"name="lastname"><br><br><br>
+                <label>Enter Your Date Of Birth</label><br><br><br>
+                <input type ="date" id="DOB" name="DOB"><br><br><br>
+                <label>Enter Your Email Id</label><br><br><br>
+                <input type ="email" name="email"><br><br><br>
+                <label>GENDER</label><br><br>
+                <input type="radio"name ="gender" value="MALE">MALE &nbsp&nbsp&nbsp
+                <input type="radio"name ="gender" value="FEMALE">FEMALE &nbsp&nbsp&nbsp
+                <input type="radio"name ="gender" value="TRANSGENDER">TRANSGENDER <br><br><br>
+                <label>Enter your city </label><br><br>
+                <input list="City"name="city" id="city">
+                <datalist id="City">
+                   <option value="COIMBATORE">
+                   <option value="CHENNAI">
+                   <option value="ERODE">
+                   <option value="SALEM">
+                   <option value="THIRCHY">
+                   <option value="MADURAI">
+                   <option value="THENI">
+                </datalist><br><br><br>
+                <label>Enter Your Mobile Number 1:</label><br><br>
+                <input type="tel"name="telephone1" min="10" max="20"><br><br><br>
+                <label>Enter Your Mobile Number 2:</label><br><br>
+                <input type="tel"name="telephone2" min="10" max="20"><br><br><br>
+                <input type="button"value="Create" onClick=myFunc()><br><br>
+                <input type="reset"value="Clear Details">
+                </font>
+                </form>
+                </div>
+</body>
+
+</html>
